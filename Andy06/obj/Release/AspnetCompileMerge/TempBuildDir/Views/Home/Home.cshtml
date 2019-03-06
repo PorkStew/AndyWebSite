@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Style_Sheet/MenuBar.css")" rel="stylesheet" type="text/css" />
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <header class="navigation">
+        <nav>
+            <ul>
+                <li>
+                    @Html.ActionLink("Home", "", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Codes", "", "Contactss")
+                </li>
+                <li>
+                    @Html.ActionLink("Profile", "", "Contactss")
+                </li>
+                <li>
+                    @Html.ActionLink("Contact", "", "Contact")
+                </li>
+                <!-- Maybe the navigation bar gets more buttons in the future. -->
+            </ul>
+        </nav>
+    </header>
+    <h1>Welcome</h1>
+    <p>We should be done but it will take some time d</p>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <h3 class="copyright">Copyright</h3>
+        <h3 class="SiteMap">Site Map</h3>
+        <ol>
+            <li>THE</li>
+                       <li>WORK</li>
+        </ol>
+    </footer>
+</body>
+</html>

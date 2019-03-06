@@ -1,0 +1,24 @@
+﻿body {
+}
+.container{
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:1em;
+}
+.wrapper{
+    box-shadow: 0 0 20px 0 rgb(72,94,118);
+}
+h1{
+   text-align: center;
+   font-family: Arial;
+}
+ol {
+    list-style: none;
+    text-align: center;
+    font-family:Arial;
+
+}
+.wrapper > *{
+    padding: 1em;
+}

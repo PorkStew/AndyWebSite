@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Style_Sheet/MenuBar.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Style_Sheet/Contact.css")" rel="stylesheet" type="text/css" />
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <header class="navigation">
+        <nav>
+            <ul>
+                <li>
+                    @Html.ActionLink("Home", "", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Codes", "", "Contactss")
+                </li>
+                <li>
+                    @Html.ActionLink("Profile", "", "Contactss")
+                </li>
+                <li>
+                    @Html.ActionLink("Contact", "", "Contact")
+                </li>
+                <!-- Maybe the navigation bar gets more buttons in the future. -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="wrapper">
+            <h1> Contact Us</h1>
+            <ol>
+                <li>Telephone: 011 526 887</li>
+                <li>Cellphone: 072 364 592</li>
+                <li>Email: AndyClay@gmail.com</li>
+            </ol>
+        </div>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+    <footer id="site-footer">
+       <p>WELCOME</p>
+    </footer>
+</body>
+</html>
