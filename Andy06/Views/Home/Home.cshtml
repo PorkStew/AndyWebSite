@@ -7,27 +7,31 @@
     @RenderSection("Styles", false)
 </head>
 <body>
-    <header class="navigation">
-        <nav>
-            <ul>
-                <li>
-                    @Html.ActionLink("Home", "", "Home")
-                </li>
-                <li>
-                    @Html.ActionLink("Codes", "", "Contactss")
-                </li>
-                <li>
-                    @Html.ActionLink("Profile", "", "Contactss")
-                </li>
-                <li>
-                    @Html.ActionLink("Contact", "", "Contact")
-                </li>
-                <!-- Maybe the navigation bar gets more buttons in the future. -->
-            </ul>
-        </nav>
-    </header>
+
+  
+        <header class="navigation">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            @Html.ActionLink("Home", "", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Codes", "", "Contactss")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Profile", "", "Contactss")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Contact", "", "Contact")
+                        </li>
+                        <!-- Maybe the navigation bar gets more buttons in the future. -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+   
     <h1>Welcome</h1>
-    <p>Hello there</p>
     <div>
         @RenderBody()
     </div>
