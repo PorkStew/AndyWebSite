@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Images\background1.jpg" />
     <Content Include="Images\david-billings-1413733-unsplash.jpg" />
     <Content Include="Images\header.jpg" />
     <Content Include="Style_Sheet\Contact.css" />
