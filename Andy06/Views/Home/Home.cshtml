@@ -8,40 +8,73 @@
 </head>
 <body>
 
-  
-        <header class="navigation">
-            <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            @Html.ActionLink("Home", "", "Home")
-                        </li>
-                        <li>
-                            @Html.ActionLink("Codes", "", "Contactss")
-                        </li>
-                        <li>
-                            @Html.ActionLink("Profile", "", "Contactss")
-                        </li>
-                        <li>
-                            @Html.ActionLink("Contact", "", "Contact")
-                        </li>
-                        <!-- Maybe the navigation bar gets more buttons in the future. -->
-                    </ul>
-                </nav>
-            </div>
-        </header>
-   
-    <h1>Welcome</h1>
+    
+        <nav>
+            <ul>
+                <li>
+                    @Html.ActionLink("Home", "", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Codes", "", "Contactss")
+                </li>
+                <li>
+                    @Html.ActionLink("Profile", "", "Contactss")
+                </li>
+                <li>
+                    @Html.ActionLink("Contact", "", "Contact")
+                </li>
+    
+    </ul>
+            </nav>
+
+
+
+
+
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="boarder">
+                Andy Clay
+            </span>
+        </div>
+        <p class="Mheader">
+            Professional Minerals Industry and Oil and Gas Advisor
+        </p>
+    </div>
+    <section class="section section-light">
+        <h2>section1</h2>
+        <p>
+            fsdfsdafsdafasdfsadfadsfasdfasdfgomnasdegfiujoawserhuighjasdnig
+            fasdijuhgfjioadsjghfioupsdafjgjiadsfujhngiadfsjhgdiofjgiadfhjgndfpi
+            sadfgjuiohnadsfgipasdfjpuiogjadgioujadfjguiofadfsiuhjgiojuhpadfs
+        </p>
+    </section>
+
+    <div class="pimg2">
+        <div class="ptext">
+            <span class="boarder">
+                section 2
+            </span>
+        </div>
+    </div>
+    <section class="section section-dark">
+        <h2>section2</h2>
+        <p>
+
+        </p>
+    </section>
+
+
     <div>
         @RenderBody()
     </div>
-    <footer>
-        <h3 class="copyright">Copyright</h3>
-        <h3 class="SiteMap">Site Map</h3>
-        <ol>
-            <li>THE</li>
-                       <li>WORK</li>
-        </ol>
-    </footer>
+    @*<footer>
+            <h3 class="copyright">Copyright</h3>
+            <h3 class="SiteMap">Site Map</h3>
+            <ol>
+                <li>THE</li>
+                <li>WORK</li>
+            </ol>
+        </footer>*@
 </body>
 </html>
