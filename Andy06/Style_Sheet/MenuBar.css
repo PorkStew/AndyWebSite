@@ -7,26 +7,30 @@
     line-height: 1.8em;
     color:#808080;
 }
-nav ul{
-    text-align: center;
-    display:flex;
+header {
+    background: #ffd800;
 }
-nav ul li{
+header::after{
+    content:'';
+    
+   /*display:table; adds a background*/
+    clear: both;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding:0;
     list-style: none;
 }
-    nav ul li a {
-        line-height:80px;
-        color:aqua;
-        padding: 5px 20px;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: 5s;
-    }
-    nav ul li a.active,
-    nav ul li a.hover{
-        color:red;
-        background:#f00;
-    }
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top:25px;
+}
+
+
 .ptext{
     position:absolute;
     top:20%;
