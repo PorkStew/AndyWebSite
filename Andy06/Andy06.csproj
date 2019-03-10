@@ -92,9 +92,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Images\1736293.png" />
     <Content Include="Images\background1.jpg" />
+    <Content Include="Images\blade-bucket-construction-162515.jpg" />
     <Content Include="Images\david-billings-1413733-unsplash.jpg" />
     <Content Include="Images\header.jpg" />
+    <Content Include="keep for now\TextFile1.txt" />
     <Content Include="Style_Sheet\Contact.css" />
     <Content Include="Style_Sheet\MenuBar.css" />
     <Content Include="Web.config">
