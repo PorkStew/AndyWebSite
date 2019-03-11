@@ -4,79 +4,80 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link href="@Url.Content("~/Style_Sheet/MenuBar.css")" rel="stylesheet" type="text/css" />
+    <script src="~/Style_Sheet/MenuBar.js"></script>
     @RenderSection("Styles", false)
 </head>
 <body>
+    <nav id="navbar">
+        <ul>
+            <li>
+                @Html.ActionLink("Home", "", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("Codes", "", "Contactss")
+            </li>
+            <li>
+                @Html.ActionLink("Profile", "", "Contactss")
+            </li>
+            <li>
+                @Html.ActionLink("Contact", "", "Contact")
+            </li>
 
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        @Html.ActionLink("Home", "", "Home")
-                    </li>
-                    <li>
-                        @Html.ActionLink("Codes", "", "Contactss")
-                    </li>
-                    <li>
-                        @Html.ActionLink("Profile", "", "Contactss")
-                    </li>
-                    <li>
-                        @Html.ActionLink("Contact", "", "Contact")
-                    </li>
+        </ul>
+    </nav>
+    
+      
 
-                </ul>
-            </nav>
+               
+
+
+
+
+
+        <div class="pimg1">
+            <div class="ptext">
+                <span class="boarder">
+                    Andy Clay
+                </span>
+            </div>
+            <p class="Mheader">
+                Professional Minerals Industry and Oil and Gas Advisor
+            </p>
         </div>
-    </header>
+        <section class="section section-light">
+            <h2>section1</h2>
+            <p>
+                fsdfsdafsdafasdfsadfadsfasdfasdfgomnasdegfiujoawserhuighjasdnig
+                fasdijuhgfjioadsjghfioupsdafjgjiadsfujhngiadfsjhgdiofjgiadfhjgndfpi
+                sadfgjuiohnadsfgipasdfjpuiogjadgioujadfjguiofadfsiuhjgiojuhpadfs
+            </p>
+        </section>
 
-
-
-
-    <div class="pimg1">
-        <div class="ptext">
-            <span class="boarder">
-                Andy Clay
-            </span>
+        <div class="pimg2">
+            <div class="ptext">
+                <span class="boarder">
+                    section 2
+                </span>
+            </div>
         </div>
-        <p class="Mheader">
-            Professional Minerals Industry and Oil and Gas Advisor
-        </p>
-    </div>
-    <section class="section section-light">
-        <h2>section1</h2>
-        <p>
-            fsdfsdafsdafasdfsadfadsfasdfasdfgomnasdegfiujoawserhuighjasdnig
-            fasdijuhgfjioadsjghfioupsdafjgjiadsfujhngiadfsjhgdiofjgiadfhjgndfpi
-            sadfgjuiohnadsfgipasdfjpuiogjadgioujadfjguiofadfsiuhjgiojuhpadfs
-        </p>
-    </section>
+        <section class="section section-dark">
+            <h2>section2</h2>
+            <p>
 
-    <div class="pimg2">
-        <div class="ptext">
-            <span class="boarder">
-                section 2
-            </span>
+            </p>
+        </section>
+
+
+        <div>
+            @RenderBody()
         </div>
-    </div>
-    <section class="section section-dark">
-        <h2>section2</h2>
-        <p>
-
-        </p>
-    </section>
-
-
-    <div>
-        @RenderBody()
-    </div>
-    @*<footer>
-            <h3 class="copyright">Copyright</h3>
-            <h3 class="SiteMap">Site Map</h3>
-            <ol>
-                <li>THE</li>
-                <li>WORK</li>
-            </ol>
-        </footer>*@
+        @*<footer>
+                <h3 class="copyright">Copyright</h3>
+                <h3 class="SiteMap">Site Map</h3>
+                <ol>
+                    <li>THE</li>
+                    <li>WORK</li>
+                </ol>
+            </footer>*@
 </body>
 </html>
