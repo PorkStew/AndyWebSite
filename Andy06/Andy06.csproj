@@ -97,9 +97,11 @@
     <Content Include="Images\blade-bucket-construction-162515.jpg" />
     <Content Include="Images\david-billings-1413733-unsplash.jpg" />
     <Content Include="Images\header.jpg" />
+    <Content Include="Images\Valcano.jpg" />
     <Content Include="keep for now\TextFile1.txt" />
     <Content Include="Style_Sheet\Contact.css" />
     <Content Include="Style_Sheet\MenuBar.css" />
+    <Content Include="Style_Sheet\MenuBar.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
