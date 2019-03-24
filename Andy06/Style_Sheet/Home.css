@@ -1,14 +1,12 @@
-﻿body, html{
-    height:100%;
-    margin:0;
-    font-size:16px;
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
     font-family: "Lato", sans-serif;
-    font-weight:400;
+    font-weight: 400;
     line-height: 1.8em;
-    color:#808080;
+    /*color:#808080;*/
 }
-
-
 nav {
     position: fixed;
     top: 0;
@@ -22,21 +20,25 @@ nav {
     /*box-shadow: 0px 4px 7px #777;*/
     transition: background-color 0.4s ease-out;
 }
+
     nav ul li a {
         text-decoration: none;
         color: white;
         font-size: 25px;
     }
-nav ul{
-    list-style:none;
-    text-align:center;
-    padding:0;
-    margin:0;
-}
-    nav ul li {
-        display: inline-block;
-        padding: 20px;
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
+
+        nav ul li {
+            display: inline-block;
+            padding: 20px;
+        }
+
     nav li:hover {
         border-radius: 5px;
         opacity: 0.2;
@@ -46,17 +48,17 @@ nav ul{
         background-color: #282e34;
         color: #eef;
     }
-
-.ptext{
-    position:absolute;
-    top:18%;
-    width:100%;
-    text-align:center;
-    color:white;
-    font-size:50px;
-    letter-spacing:8px;
-    text-transform:uppercase;
+.ptext {
+    position: absolute;
+    top: 18%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
 }
+
 .Mheader {
     position: absolute;
     top: 20%;
@@ -68,40 +70,39 @@ nav ul{
     text-transform: uppercase;
     color: white;
 }
-.pimg2{
-    position:relative;
-    opacity:0.4;
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 .pimg1 {
     background: url('/../images/Valcano.jpg');
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
 }
-.pimg2 {
-    background: url('/../images/background1.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100%;
-}
+
 /*each section*/
 
-.section-light{
+.section-light {
     /*width:50%;*/
     text-align: justify;
     max-width: 1800px;
-    padding: 90px 80px;
+    padding: 40px 80px;
 }
 
 .personal-profile {
-
 }
 
-.section-dark{
-    background-color:#282e34;
-    color:#ddd;
+.section-dark {
+    height: 500px;
+    background-color: #282e34;
+    /*width:50%;*/
+    direction: unset;
+    text-align: justify;
+    padding: 20px 80px;
+    /*color of text */
+    color: #ddd;
+}
+
+.section-light2 {
+    text-align: justify;
+    max-width: 1800px;
+    padding: 40px 80px;
 }

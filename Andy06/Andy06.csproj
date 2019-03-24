@@ -100,8 +100,11 @@
     <Content Include="Images\Valcano.jpg" />
     <Content Include="keep for now\TextFile1.txt" />
     <Content Include="Style_Sheet\Contact.css" />
-    <Content Include="Style_Sheet\MenuBar.css" />
+    <Content Include="Style_Sheet\Downloads.css" />
+    <Content Include="Style_Sheet\Fees.css" />
+    <Content Include="Style_Sheet\Home.css" />
     <Content Include="Style_Sheet\MenuBar.js" />
+    <Content Include="Style_Sheet\TopicsAndPrinciples.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -109,7 +112,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\DownloadsController.cs" />
+    <Compile Include="Controllers\FeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TopicsAndPrinciplesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -122,12 +128,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Images\Dummy.docx" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\HomeView.cshtml" />
-    <Content Include="Views\Contact\Contact.cshtml" />
-    <Content Include="Views\Contact\ContactView.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\TopicsAndPrinciples\TopicsAndPrinciplesView.cshtml" />
+    <Content Include="Views\TopicsAndPrinciples\TopicsAndPrinciples.cshtml" />
+    <Content Include="Views\Fees\FeesView.cshtml" />
+    <Content Include="Views\Fees\Fees.cshtml" />
+    <Content Include="Views\Downloads\DownloadsView.cshtml" />
+    <Content Include="Views\Contact\ContactView.cshtml" />
+    <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\Downloads\Downloads.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

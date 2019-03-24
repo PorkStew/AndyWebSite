@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Style_Sheet/Contact.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Style_Sheet/Downloads.css")" rel="stylesheet" type="text/css" />
 
     <script src="~/Style_Sheet/MenuBar.js"></script>
     @RenderSection("Styles", false)
@@ -29,11 +29,13 @@
 
         </ul>
     </nav>
-
-    <div>
-        @RenderBody()
-    </div>
-    @*<footer>
+   
+    <button class="button" type="button" id="addressSearch"
+            onclick="location.href='/Images/Dummy.docx'"> </button>
+        <div>
+            @RenderBody()
+        </div>
+        @*<footer>
             <h3 class="copyright">Copyright</h3>
             <h3 class="SiteMap">Site Map</h3>
             <ol>
