@@ -1,4 +1,11 @@
-﻿body {
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    /*color:#808080;*/
 }
 
 nav {
@@ -8,7 +15,7 @@ nav {
     z-index: 9999;
     height: auto;
     width: 100%;
-    background-color: #282e34;
+    background-color: white;
     box-sizing: border-box;
     /*padding: 12px 18px;*/
     /*box-shadow: 0px 4px 7px #777;*/
@@ -17,7 +24,7 @@ nav {
 
     nav ul li a {
         text-decoration: none;
-        color: white;
+        color: #282e34;
         font-size: 25px;
     }
 
@@ -39,6 +46,27 @@ nav {
     }
 
     nav.scroll {
-        background-color: #282e34;
+        background-color: white;
         color: #eef;
     }
+.section-light {
+    height: 650px;
+    background-color:white;
+    /*width:50%;*/
+    direction: unset;
+    text-align: justify;
+    padding: 60px 80px;
+    /*color of text */
+
+}
+.section-dark {
+    height: 500px;
+    background-color: #282e34;
+    /*width:50%;*/
+    direction: unset;
+    text-align: justify;
+    padding: 20px 80px;
+    /*color of text */
+    color: #ddd;
+}
+

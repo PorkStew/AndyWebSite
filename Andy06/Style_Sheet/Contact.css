@@ -1,4 +1,6 @@
-﻿body {
+﻿
+body {
+
 }
 
 nav {
@@ -8,7 +10,7 @@ nav {
     z-index: 9999;
     height: auto;
     width: 100%;
-    background-color: #282e34;
+    background-color: white;
     box-sizing: border-box;
     /*padding: 12px 18px;*/
     /*box-shadow: 0px 4px 7px #777;*/
@@ -17,7 +19,7 @@ nav {
 
     nav ul li a {
         text-decoration: none;
-        color: white;
+        color: black;
         font-size: 25px;
     }
 
@@ -39,6 +41,72 @@ nav {
     }
 
     nav.scroll {
-        background-color: #282e34;
-        color: #eef;
+        /*background-color: #282e34;
+        color: #eef;*/
     }
+form {
+    padding: 20px 80px;
+}
+input[type=text], select {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=text]{
+    align-items: center;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+   
+}
+#submit-button {
+    text-align: center;
+    margin-top: 20px;
+
+}
+#submit {
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    background-color: #282e34;
+}
+
+
+.section-dark {
+    height: 1000px;
+    background-color: white;
+    direction: unset;
+    text-align: justify;
+    width: 630px;
+    margin: 0 auto;
+    margin-top:70px;
+    /*color of text 
+    */
+   
+    color:black;
+}
+#name {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+#emailAddress {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+#subject {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+#message {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    height: 400px;
+    width: 500px;
+}
+
+
+

@@ -1,12 +1,17 @@
-﻿<!DOCTYPE html>
+﻿@model Andy06.Models.Contact
+    @{ 
+        ViewBag.Title = "Contact";
+    }
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link href="@Url.Content("~/Style_Sheet/Contact.css")" rel="stylesheet" type="text/css" />
-
+    
     <script src="~/Style_Sheet/MenuBar.js"></script>
     @RenderSection("Styles", false)
+   
 </head>
 <body>
     <nav id="navbar">
@@ -24,22 +29,44 @@
                 @Html.ActionLink("Downloads", "", "Downloads")
             </li>
             <li>
+        
                 @Html.ActionLink("Contact", "", "Contact")
             </li>
 
         </ul>
     </nav>
 
-    <div>
-        @RenderBody()
-    </div>
-    @*<footer>
-            <h3 class="copyright">Copyright</h3>
-            <h3 class="SiteMap">Site Map</h3>
-            <ol>
-                <li>THE</li>
-                <li>WORK</li>
-            </ol>
-        </footer>*@
+    <section class="section-dark">
+        @using (Html.BeginForm("postusingparameters", "Contact"))
+        {
+            <br />
+            <h2>Name</h2>
+            <input id="name" type="text" name="name" placeholder=" Your name.." required="" />
+            <br />
+            <h2>Email address</h2>
+            <input id="emailAddress" type="text" name="emailAddress" placeholder="Your email address.." required="" />
+            <br />
+            <h2>Subject</h2>
+            <input id="subject" type="text" name="subject" placeholder=" A subject line" required="" />
+            <br />
+            <h2>Message</h2>
+            <textarea id="message" rows="4" placeholder="Write something here...!!" required="" ></textarea>
+            <br />
+            <div id="submit-button">
+                <input id="submit" type="submit" value="Submit" />
+            </div>
+        }
+        </section>
+        <div>
+            @RenderBody()
+        </div>
+        @*<footer>
+                <h3 class="copyright">Copyright</h3>
+                <h3 class="SiteMap">Site Map</h3>
+                <ol>
+                    <li>THE</li>
+                    <li>WORK</li>
+                </ol>
+            </footer>*@
 </body>
 </html>

@@ -1,6 +1,12 @@
-﻿body {
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    /*color:#808080;*/
 }
-
 nav {
     position: fixed;
     top: 0;
@@ -10,7 +16,7 @@ nav {
     width: 100%;
     background-color: #282e34;
     box-sizing: border-box;
-    /*padding: 12px 18px;*/
+    padding: 12px 18px;
     /*box-shadow: 0px 4px 7px #777;*/
     transition: background-color 0.4s ease-out;
 }
@@ -43,19 +49,22 @@ nav {
         color: #eef;
     }
 .button {
+    height: 90px;
+    width: 200px;
+    margin: -20px -50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
     border-radius: 4px;
     background-color: #f4511e;
     border: none;
     color: #FFFFFF;
     text-align: center;
     font-size: 28px;
-    padding: 20px;
-    width: 200px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
 }
-
     .button span {
         cursor: pointer;
         display: inline-block;
@@ -80,3 +89,13 @@ nav {
             opacity: 1;
             right: 0;
         }
+.section-dark {
+    height: 500px;
+    background-color: #282e34;
+   
+    direction: unset;
+    text-align: justify;
+    padding: 20px 80px;
+    /*color of text */
+    color: #ddd;
+}
