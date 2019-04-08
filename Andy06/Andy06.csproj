@@ -16,7 +16,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44320</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -129,7 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="Images\Dummy.docx" />
+    <Content Include="Images\Andy Clay CV.docx" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\HomeView.cshtml" />
