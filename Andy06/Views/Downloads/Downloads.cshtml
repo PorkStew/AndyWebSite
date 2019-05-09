@@ -18,9 +18,6 @@
                 @Html.ActionLink("Expert Witness Topics And Principles", "", "TopicsAndPrinciples")
             </li>
             <li>
-                @Html.ActionLink("Fees", "", "Fees")
-            </li>
-            <li>
                 @Html.ActionLink("Downloads", "", "Downloads")
             </li>
             <li>
@@ -29,21 +26,21 @@
 
         </ul>
     </nav>
-    <section class="section-dark">
-        <h2>testing</h2>
+    <div class="section-light">
 
+        <p>Click Bellow To Download My CV</p>
         <button class="button" onclick="location.href='/Images/Andy Clay CV.docx'" style="vertical-align:middle"><span>Download CV</span></button>
-        </section>
-        <div>
-            @RenderBody()
-        </div>
-        @*<footer>
-                <h3 class="copyright">Copyright</h3>
-                <h3 class="SiteMap">Site Map</h3>
-                <ol>
-                    <li>THE</li>
-                    <li>WORK</li>
-                </ol>
-            </footer>*@
+    </div> 
+    <div>
+        @RenderBody()
+    </div>
+    @*<footer>
+            <h3 class="copyright">Copyright</h3>
+            <h3 class="SiteMap">Site Map</h3>
+            <ol>
+                <li>THE</li>
+                <li>WORK</li>
+            </ol>
+        </footer>*@
 </body>
 </html>

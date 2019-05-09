@@ -24,7 +24,7 @@ nav {
 
     nav ul li a {
         text-decoration: none;
-        color: #282e34;
+        color: black;
         font-size: 25px;
     }
 
@@ -44,29 +44,28 @@ nav {
         border-radius: 5px;
         opacity: 0.2;
     }
-
-    nav.scroll {
-        background-color: white;
-        color: #eef;
-    }
 .section-light {
-    height: 650px;
-    background-color:white;
+    height: 670px;
+    background-color: #282e34;
     /*width:50%;*/
+    color:white;
     direction: unset;
     text-align: justify;
     padding: 60px 80px;
     /*color of text */
-
 }
 .section-dark {
-    height: 500px;
-    background-color: #282e34;
+    height: 428px;
+    background-color: white;
     /*width:50%;*/
     direction: unset;
     text-align: justify;
     padding: 20px 80px;
     /*color of text */
+}
+.footer {
+    height: 25px;
+    background-color: #282e34;
+    padding: 20px 80px;
     color: #ddd;
 }
-

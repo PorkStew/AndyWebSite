@@ -106,3 +106,13 @@ nav {
     max-width: 1800px;
     padding: 40px 80px;
 }
+.section-light2, ul {
+    /*/*text-align:center;
+    list-style-position:inside;*/*/
+}
+.footer {
+    height: 25px;
+    background-color: #282e34;
+    padding: 20px 80px;
+    color: #ddd;
+}

@@ -1,11 +1,12 @@
 ﻿body, html {
-    height: 100%;
+    /*/*height: 100%;*/*/
     margin: 0;
     font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.8em;
     /*color:#808080;*/
+    background-color:white;
 }
 nav {
     position: fixed;
@@ -48,13 +49,24 @@ nav {
         background-color: #282e34;
         color: #eef;
     }
-.button {
-    height: 90px;
-    width: 200px;
-    margin: -20px -50px;
-    position: relative;
+h1 {
+    position: absolute;
+    width: 100px;
+    height: 50px;
     top: 50%;
     left: 50%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px;
+    font-size:25px;
+}
+.button {    
+    height: 90px;
+    width: 200px;
+    /*margin: -20px -50px;*/
+    position: center;
+    /*top: 50%;*/
+    left: 50%;
+    right: 50%;
     display: inline-block;
     border-radius: 4px;
     background-color: #f4511e;
@@ -89,13 +101,17 @@ nav {
             opacity: 1;
             right: 0;
         }
-.section-dark {
-    height: 500px;
-    background-color: #282e34;
-   
+
+.section-light {
+    height: 60px;
+    /*width:50%;*/
+    color: black;
+    background-color:white;
     direction: unset;
-    text-align: justify;
-    padding: 20px 80px;
+    font-size:35px;
+    margin-top: 70px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
     /*color of text */
-    color: #ddd;
 }

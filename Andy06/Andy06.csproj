@@ -101,7 +101,6 @@
     <Content Include="keep for now\TextFile1.txt" />
     <Content Include="Style_Sheet\Contact.css" />
     <Content Include="Style_Sheet\Downloads.css" />
-    <Content Include="Style_Sheet\Fees.css" />
     <Content Include="Style_Sheet\Home.css" />
     <Content Include="Style_Sheet\MenuBar.js" />
     <Content Include="Style_Sheet\TopicsAndPrinciples.css" />
@@ -136,9 +135,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\TopicsAndPrinciples\TopicsAndPrinciplesView.cshtml" />
     <Content Include="Views\TopicsAndPrinciples\TopicsAndPrinciples.cshtml" />
-    <Content Include="Views\Fees\FeesView.cshtml" />
-    <Content Include="Views\Fees\Fees.cshtml" />
-    <Content Include="Views\Downloads\DownloadsView.cshtml" />
+    <Content Include="Views\Downloads\s3DownloadsView.cshtml" />
     <Content Include="Views\Contact\ContactView.cshtml" />
     <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\Downloads\Downloads.cshtml" />
