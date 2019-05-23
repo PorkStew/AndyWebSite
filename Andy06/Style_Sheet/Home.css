@@ -2,7 +2,7 @@
     height: 100%;
     margin: 0;
     font-size: 16px;
-    font-family: "Lato", sans-serif;
+    font-family: Arial;
     font-weight: 400;
     line-height: 1.8em;
     /*color:#808080;*/
@@ -23,8 +23,8 @@ nav {
 
     nav ul li a {
         text-decoration: none;
-        color: white;
-        font-size: 25px;
+        color: black;
+        font-size: 28px;
     }
 
     nav ul {
@@ -48,12 +48,15 @@ nav {
         background-color: #282e34;
         color: #eef;
     }
+    nav.scroll  ul li a{
+        color:white;
+    }
 .ptext {
     position: absolute;
-    top: 18%;
+    top: 30%;
     width: 100%;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 50px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -61,18 +64,18 @@ nav {
 
 .Mheader {
     position: absolute;
-    top: 20%;
+    top: 35%;
     width: 100%;
     text-align: center;
     color: black;
     font-size: 30px;
     letter-spacing: 8px;
     text-transform: uppercase;
-    color: white;
+    color: black;
 }
 
 .pimg1 {
-    background: url('/../images/Valcano.jpg');
+    background: url('/../images/Home.jpg');
     background-size: cover;
     background-attachment: fixed;
     height: 100%;

@@ -97,9 +97,11 @@
     <Content Include="Images\blade-bucket-construction-162515.jpg" />
     <Content Include="Images\david-billings-1413733-unsplash.jpg" />
     <Content Include="Images\header.jpg" />
+    <Content Include="Images\Home.JPG" />
     <Content Include="Images\Valcano.jpg" />
     <Content Include="keep for now\TextFile1.txt" />
     <Content Include="Style_Sheet\Contact.css" />
+    <Content Include="Style_Sheet\CV.css" />
     <Content Include="Style_Sheet\Downloads.css" />
     <Content Include="Style_Sheet\Home.css" />
     <Content Include="Style_Sheet\MenuBar.js" />
@@ -111,10 +113,12 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\CVController.cs" />
     <Compile Include="Controllers\DownloadsController.cs" />
+    <Compile Include="Controllers\ExpertWitnessTopicsController.cs" />
     <Compile Include="Controllers\FeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\TopicsAndPrinciplesController.cs" />
+    <Compile Include="Controllers\PrinciplesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -139,6 +143,12 @@
     <Content Include="Views\Contact\ContactView.cshtml" />
     <Content Include="Views\Contact\Contact.cshtml" />
     <Content Include="Views\Downloads\Downloads.cshtml" />
+    <Content Include="Views\ExpertWitnessTopics\ExpertWitnessTopics.cshtml" />
+    <Content Include="Views\ExpertWitnessTopics\ExpertWitnessTopicsView.cshtml" />
+    <Content Include="Views\Principles\Principles.cshtml" />
+    <Content Include="Views\Principles\PrinciplesView.cshtml" />
+    <Content Include="Views\CV\CV.cshtml" />
+    <Content Include="Views\CV\CVview.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

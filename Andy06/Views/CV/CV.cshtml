@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<link href="@Url.Content("~/Style_Sheet/CV.css")" rel="stylesheet" type="text/css" />
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CV</title>
+</head>
+
+<nav id="navbar">
+    <ul>
+        <li>
+            @Html.ActionLink("Home", "", "Home")
+        </li>
+        <li>
+            @Html.ActionLink("Expert Witness Topics", "", "ExpertWitnessTopics")
+        </li>
+        <li>
+            @Html.ActionLink("Principles", "", "Principles")
+        </li>
+        <li>
+            @Html.ActionLink("CV", "", "CV")
+        </li>
+        <li>
+            @Html.ActionLink("Contact", "", "Contact")
+        </li>
+
+    </ul>
+</nav>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
