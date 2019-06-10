@@ -7,11 +7,63 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Style_Sheet/Principals.css")" rel="stylesheet" type="text/css" />
+    @RenderSection("Styles", false)
     <title></title>
 </head>
+<nav id="navbar">
+    <ul>
+        <li>
+            @Html.ActionLink("Home", "", "Home")
+        </li>
+        <li>
+            @Html.ActionLink("Expert Witness Topics", "", "ExpertWitnessTopics")
+        </li>
+        <li>
+            @Html.ActionLink("Principles", "", "Principles")
+        </li>
+        <li>
+            @Html.ActionLink("CV", "", "CV")
+        </li>
+        <li>
+            @Html.ActionLink("Contact", "", "Contact")
+        </li>
+
+    </ul>
+</nav>
 <body>
+    <section class="section-light">
+        <h2>Eye Witness Principles</h2>
+        <p>
+            There is much case law about how Experts should conduct themselves and being mindful of the conflict between helping to win a case and testifying in a manner which does not demonstrate bias is a difficult task.
+            <br />
+            Ensuring no conflicts of interest and preventing being accused of being the “Fruit of a Poisonous Tree” are crucial to maintaining the integrity of the Expert.
+            <br />
+            However, preparing a logical, compliant and factually correct argument for each case is at the centre of compelling credible and compelling expert witness evidence. This should be difficult to destroy and helpful to the court.
+            <br />
+            In most cases, the courts are not familiar with technical details and trying to gain opposing experts to agree on technical facts and interpretations is a necessary but complex art.
+        </p>
+    </section>
+    <p class="footer">
+        <span>
+            @Html.ActionLink("Home", "", "Home")
+        </span>
+        <span>
+            @Html.ActionLink("Expert Witness Topics", "", "ExpertWitnessTopics")
+        </span>
+        <span>
+            @Html.ActionLink("Principles", "", "Principles")
+        </span>
+        <span>
+            @Html.ActionLink("CV", "", "CV")
+        </span>
+        <span>
+            @Html.ActionLink("Contact", "", "Contact")
+        </span>
+
+    </p>
     <div>
-    @RenderBody();
+        @RenderBody();
     </div>
 </body>
 </html>

@@ -103,8 +103,10 @@
     <Content Include="Style_Sheet\Contact.css" />
     <Content Include="Style_Sheet\CV.css" />
     <Content Include="Style_Sheet\Downloads.css" />
+    <Content Include="Style_Sheet\ExpertWitnessTopics.css" />
     <Content Include="Style_Sheet\Home.css" />
     <Content Include="Style_Sheet\MenuBar.js" />
+    <Content Include="Style_Sheet\Principals.css" />
     <Content Include="Style_Sheet\TopicsAndPrinciples.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

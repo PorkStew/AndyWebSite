@@ -20,13 +20,15 @@
                 @Html.ActionLink("Home", "", "Home")
             </li>
             <li>
-                @Html.ActionLink("Expert Witness Topics And Principles", "", "TopicsAndPrinciples")
+                @Html.ActionLink("Expert Witness Topics", "", "ExpertWitnessTopics")
             </li>
             <li>
-                @Html.ActionLink("Downloads", "", "Downloads")
+                @Html.ActionLink("Principles", "", "Principles")
             </li>
             <li>
-        
+                @Html.ActionLink("CV", "", "CV")
+            </li>
+            <li>
                 @Html.ActionLink("Contact", "", "Contact")
             </li>
 
@@ -40,32 +42,32 @@
             <h1>Send me an email</h1>
             <br />
             <h2>Name</h2>
-            <input id="name" type="text" name="name" placeholder=" Your name.." required="" />
+            <input id="name" type="text" name="name" placeholder=" Your name here.." required="" />
             <br />
             <h2>Email address</h2>
-            <input id="emailAddress" type="text" name="emailAddress" placeholder="Your email address.." required="" />
+            <input id="emailAddress" type="text" name="emailAddress" placeholder="Your email address here.." required="" />
             <br />
             <h2>Subject</h2>
-            <input id="subject" type="text" name="subject" placeholder=" A subject line" required="" />
+            <input id="subject" type="text" name="subject" placeholder=" Subject line here.." required="" />
             <br />
             <h2>Message</h2>
-            <textarea id="message" rows="4" placeholder="Write something here...!!" required="" ></textarea>
+            <textarea id="message" rows="4" placeholder="Write something here...!!" required=""></textarea>
             <br />
             <div id="submit-button">
                 <input id="submit" type="submit" value="Submit" />
             </div>
         }
-        </section>
-        <div>
-            @RenderBody()
-        </div>
-        @*<footer>
-                <h3 class="copyright">Copyright</h3>
-                <h3 class="SiteMap">Site Map</h3>
-                <ol>
-                    <li>THE</li>
-                    <li>WORK</li>
-                </ol>
-            </footer>*@
+    </section>
+    <div>
+        @RenderBody()
+    </div>
+    @*<footer>
+            <h3 class="copyright">Copyright</h3>
+            <h3 class="SiteMap">Site Map</h3>
+            <ol>
+                <li>THE</li>
+                <li>WORK</li>
+            </ol>
+        </footer>*@
 </body>
 </html>
