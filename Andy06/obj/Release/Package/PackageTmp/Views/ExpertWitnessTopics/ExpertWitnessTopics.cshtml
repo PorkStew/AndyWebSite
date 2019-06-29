@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<link href="@Url.Content("~/Style_Sheet/ExpertWitnessTopics.css")" rel="stylesheet" type="text/css" />
+<script src="~/Style_Sheet/MenuBar.js"></script>
+@RenderSection("Styles", false)
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Exper Witness Topics</title>
+</head>
+<nav id="navbar">
+    <ul>
+        <li>
+            @Html.ActionLink("Home", "", "Home")
+        </li>
+        <li>
+            @Html.ActionLink("Expert Witness Topics", "", "ExpertWitnessTopics")
+        </li>
+        <li>
+            @Html.ActionLink("Principles", "", "Principles")
+        </li>
+        <li>
+            @Html.ActionLink("CV", "", "CV")
+        </li>
+        <li>
+            @Html.ActionLink("Contact", "", "Contact")
+        </li>
+
+    </ul>
+</nav>
+<body>
+    <section class="section-light">
+        <h2>Expert Witness Topics</h2>
+        <ul>
+            <li>Valuation disputes for transactions;</li>
+        </ul>
+        <ul>
+            <li>Mineral property sales;</li>
+        </ul>
+        <ul>
+            <li>Share sales;</li>
+        </ul>
+        <ul>
+            <li>Option pricing;</li>
+        </ul>
+        <ul>
+            <li>Capital Gains Tax;</li>
+        </ul>
+        <ul>
+            <li>Income and Revenue recognition;</li>
+        </ul>
+        <ul>
+            <li>Interpretation of mineral resource and mineral reserve classification for the Comparative Approach;</li>
+        </ul>
+        <ul>
+            <li>Assessing Modifying Factors for the Income Approach or cash flow calculations;</li>
+        </ul>
+        <ul>
+            <li>Assessing capital expenditure for successful efforts calculations and capitalization of expense for the Historical Cost Approach;</li>
+        </ul>
+        <ul>
+            <li>Assessing timing of first full production for tax purposes;</li>
+        </ul>
+        <ul>
+            <li>Assessing inventories, stockpiles and metal accounting issues for balance sheet items;</li>
+        </ul>
+        <ul>
+            <li>Royalty and BEPS issues.</li>
+        </ul>
+        <p>These topics often lie at the heart of disputes between parties.</p>
+        <p>Pre-litigation strategy consultations are recommended to assess technical and economic factors that the professional expert arguments would be centred upon to assess chance of success and merits.</p>
+    </section>
+
+    <p class="footer">
+        <span>
+            @Html.ActionLink("Home", "", "Home")
+        </span>
+        <span>
+            @Html.ActionLink("Expert Witness Topics", "", "ExpertWitnessTopics")
+        </span>
+        <span>
+            @Html.ActionLink("Principles", "", "Principles")
+        </span>
+        <span>
+            @Html.ActionLink("CV", "", "CV")
+        </span>
+        <span>
+            @Html.ActionLink("Contact", "", "Contact")
+        </span>
+
+    </p>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

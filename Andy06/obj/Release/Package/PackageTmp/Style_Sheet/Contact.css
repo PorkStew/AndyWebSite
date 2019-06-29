@@ -1,24 +1,119 @@
-﻿body {
+﻿
+body {
+    font-family: Arial;
 }
-.container{
-    max-width:1170px;
-    margin-left:auto;
-    margin-right:auto;
-    padding:1em;
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    /*padding: 12px 18px;*/
+    /*box-shadow: 0px 4px 7px #777;*/
+    background-color: #282e34;
+    
 }
-.wrapper{
-    box-shadow: 0 0 20px 0 rgb(72,94,118);
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+    nav li:hover {
+        border-radius: 5px;
+        opacity: 0.2;
+    }
+
+    nav.scroll {
+        /*background-color: #282e34;
+        color: #eef;*/
+    }
+form {
+    padding: 20px 80px;
 }
-h1{
-   text-align: center;
-   font-family: Arial;
+input[type=text], select {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-ol {
-    list-style: none;
+input[type=text]{
+    align-items: center;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+   
+}
+#submit-button {
     text-align: center;
-    font-family:Arial;
+    margin-top: 20px;
 
 }
-.wrapper > *{
-    padding: 1em;
+#submit{
+    width:190px;
+    height:60px;
 }
+
+
+.section-dark {
+    height: 1000px;
+    background-color: white;
+    direction: unset;
+    text-align: justify;
+    width: 630px;
+    margin: 0 auto;
+    margin-top:70px;
+    /*color of text 
+    */
+   
+    color:black;
+}
+.section-dark, h2{
+    text-align:left;
+}
+h1{
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+#name {
+    margin-top: -60px;
+    margin-bottom: -10px;
+}
+#emailAddress {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+#subject {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+#message {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    height: 400px;
+    width: 500px;
+    text-align
+}
+
+
+
+

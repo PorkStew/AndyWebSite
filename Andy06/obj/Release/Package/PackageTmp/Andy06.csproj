@@ -16,7 +16,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44320</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -92,8 +92,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Images\Home.JPG" />
+    <Content Include="keep for now\TextFile1.txt" />
     <Content Include="Style_Sheet\Contact.css" />
-    <Content Include="Style_Sheet\MenuBar.css" />
+    <Content Include="Style_Sheet\CV.css" />
+    <Content Include="Style_Sheet\Downloads.css" />
+    <Content Include="Style_Sheet\ExpertWitnessTopics.css" />
+    <Content Include="Style_Sheet\Home.css" />
+    <Content Include="Style_Sheet\MenuBar.js" />
+    <Content Include="Style_Sheet\Principals.css" />
+    <Content Include="Style_Sheet\TopicsAndPrinciples.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -101,10 +109,16 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\CVController.cs" />
+    <Compile Include="Controllers\DownloadsController.cs" />
+    <Compile Include="Controllers\ExpertWitnessTopicsController.cs" />
+    <Compile Include="Controllers\FeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PrinciplesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -114,12 +128,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Images\Andy Clay CV.docx" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Home.cshtml" />
     <Content Include="Views\Home\HomeView.cshtml" />
-    <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\TopicsAndPrinciples\TopicsAndPrinciplesView.cshtml" />
+    <Content Include="Views\TopicsAndPrinciples\TopicsAndPrinciples.cshtml" />
     <Content Include="Views\Contact\ContactView.cshtml" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\Downloads\Downloads.cshtml" />
+    <Content Include="Views\ExpertWitnessTopics\ExpertWitnessTopics.cshtml" />
+    <Content Include="Views\ExpertWitnessTopics\ExpertWitnessTopicsView.cshtml" />
+    <Content Include="Views\Principles\Principles.cshtml" />
+    <Content Include="Views\Principles\PrinciplesView.cshtml" />
+    <Content Include="Views\CV\CV.cshtml" />
+    <Content Include="Views\CV\CVview.cshtml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -129,8 +153,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -9,6 +9,7 @@ namespace Andy06.Controllers
     public class CVController : Controller
     {
         // GET: CV
+        [RequireHttps]
         public ActionResult Index()
         {
             return View("CVview");

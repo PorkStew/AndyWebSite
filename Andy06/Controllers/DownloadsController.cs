@@ -10,6 +10,7 @@ namespace Andy06.Controllers
     public class DownloadsController : Controller
     {
         // GET: Downloads
+        [RequireHttps]
         public ActionResult Index()
         {
             return View("DownloadsView");

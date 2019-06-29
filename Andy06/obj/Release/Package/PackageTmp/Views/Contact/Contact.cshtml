@@ -1,50 +1,65 @@
-﻿<!DOCTYPE html>
-
+﻿@model Andy06.Models.Contact
+    @{ 
+        ViewBag.Title = "Contact";
+    }
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Style_Sheet/MenuBar.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Style_Sheet/Contact.css")" rel="stylesheet" type="text/css" />
+    
+    <script src="~/Style_Sheet/MenuBar.js"></script>
     @RenderSection("Styles", false)
+   
 </head>
 <body>
-    <header class="navigation">
-        <nav>
-            <ul>
-                <li>
-                    @Html.ActionLink("Home", "", "Home")
-                </li>
-                <li>
-                    @Html.ActionLink("Codes", "", "Contactss")
-                </li>
-                <li>
-                    @Html.ActionLink("Profile", "", "Contactss")
-                </li>
-                <li>
-                    @Html.ActionLink("Contact", "", "Contact")
-                </li>
-                <!-- Maybe the navigation bar gets more buttons in the future. -->
-            </ul>
-        </nav>
-    </header>
+    <nav id="navbar">
+        <ul>
+            <li>
+                @Html.ActionLink("Home", "", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("Expert Witness Topics", "", "ExpertWitnessTopics")
+            </li>
+            <li>
+                @Html.ActionLink("Principles", "", "Principles")
+            </li>
+            <li>
+                @Html.ActionLink("CV", "", "CV")
+            </li>
+            <li>
+                @Html.ActionLink("Contact", "", "Contact")
+            </li>
 
-    <div class="container">
-        <div class="wrapper">
-            <h1> Contact Us</h1>
-            <ol>
-                <li>Telephone: 011 526 887</li>
-                <li>Cellphone: 072 364 592</li>
-                <li>Email: AndyClay@gmail.com</li>
-            </ol>
-        </div>
-    </div>
+        </ul>
+    </nav>
 
+    <section class="section-dark">
+        @using (Html.BeginForm("postusingparameters", "Contact"))
+        {
+            <br />
+            <h1>Send me an email</h1>
+            <br />
+            <h2>Name</h2>
+            <input id="name" type="text" name="name" placeholder=" Your name here.." required="" />
+            <br />
+            <h2>Email address</h2>
+            <input id="emailAddress" type="text" name="emailAddress" placeholder="Your email address here.." required="" />
+            <br />
+            <h2>Subject</h2>
+            <input id="subject" type="text" name="subject" placeholder=" Subject line here.." required="" />
+            <br />
+            <h2>Message</h2>
+            <textarea id="message" rows="4" name="body" placeholder="Write something here...!!" required=""></textarea>
+            <br />
+            <div id="submit-button">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        }
+    </section>
     <div>
         @RenderBody()
     </div>
-    <footer id="site-footer">
-       <p>WELCOME</p>
-    </footer>
 </body>
 </html>

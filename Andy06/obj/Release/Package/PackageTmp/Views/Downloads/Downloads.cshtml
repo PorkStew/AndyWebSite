@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Style_Sheet/Downloads.css")" rel="stylesheet" type="text/css" />
+
+    <script src="~/Style_Sheet/MenuBar.js"></script>
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li>
+                @Html.ActionLink("Home", "", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("Expert Witness Topics And Principles", "", "TopicsAndPrinciples")
+            </li>
+            <li>
+                @Html.ActionLink("Downloads", "", "Downloads")
+            </li>
+            <li>
+                @Html.ActionLink("Contact", "", "Contact")
+            </li>
+
+        </ul>
+    </nav>
+    <div class="section-light">
+
+        <p>Click Bellow To Download My CV</p>
+        <button class="button" onclick="location.href='/Images/Andy Clay CV.docx'" style="vertical-align:middle"><span>Download CV</span></button>
+    </div> 
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
