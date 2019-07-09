@@ -14,6 +14,7 @@ namespace Andy06.Controllers
         [RequireHttps]
         public ActionResult Index()
         {
+            
             return View("ContactView");
         }
         [HttpPost]

@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Images\hamburger-icon.png" />
     <Content Include="Images\Home.JPG" />
     <Content Include="keep for now\TextFile1.txt" />
     <Content Include="Style_Sheet\Contact.css" />

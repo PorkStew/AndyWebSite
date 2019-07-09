@@ -18,7 +18,7 @@ namespace Andy06.Models
             string fromEmail = "WebsiteEmailSender123@gmail.com";
             string password = "maximus11711A";
             //change this email once complete to main 
-            string toEmail = "porkstew1@gmail.com";
+            string toEmail = "andyclay23@gmail.com";
             messages.From = new MailAddress(fromEmail);
             messages.To.Add(toEmail);
             messages.Subject = Subject;

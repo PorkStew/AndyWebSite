@@ -9,7 +9,7 @@ namespace Andy06.Controllers
     public class ExpertWitnessTopicsController : Controller
     {
         // GET: ExpertWitnessTopics
-        [RequireHttps]
+       // [RequireHttps]
         public ActionResult Index()
         {
             return View("ExpertWitnessTopicsView");
