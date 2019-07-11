@@ -77,8 +77,10 @@ nav {
 }
 /*Home Picture*/
 .pimg1 {
-    background: url('/../images/Home.jpg');
+    background: url('/../images/Home.jpg') no-repeat center center fixed;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
     height: 100%;
 }
@@ -279,7 +281,19 @@ nav {
         width: 94%;
     }
 
+    .ptext {
+        font-size: 30px;
+    }
+    .Mheader{
+        font-size: 20px;
+    }
+
+
 }
+@media only screen and (max-width: 1295px) {
+    
+}
+
 
 
 
