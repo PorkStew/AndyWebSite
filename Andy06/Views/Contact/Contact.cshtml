@@ -7,7 +7,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Style_Sheet/Contact.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("//expertsunlimited.co.za/Style_Sheet/Contact.css")" rel="stylesheet" type="text/css" />
     
     <script src="~/Style_Sheet/MenuBar.js"></script>
     @RenderSection("Styles", false)
@@ -51,23 +51,15 @@
             <input id="subject" type="text" name="subject" placeholder=" Subject line here.." required="" />
             <br />
             <h2>Message</h2>
-            <textarea id="message" rows="4" placeholder="Write something here...!!" required=""></textarea>
+            <textarea id="message" rows="4" name="body" placeholder="Write something here...!!" required=""></textarea>
             <br />
             <div id="submit-button">
-                <input id="submit" type="submit" value="Submit" />
+                <button id="submit" type="submit">Submit</button>
             </div>
         }
     </section>
     <div>
         @RenderBody()
     </div>
-    @*<footer>
-            <h3 class="copyright">Copyright</h3>
-            <h3 class="SiteMap">Site Map</h3>
-            <ol>
-                <li>THE</li>
-                <li>WORK</li>
-            </ol>
-        </footer>*@
 </body>
 </html>

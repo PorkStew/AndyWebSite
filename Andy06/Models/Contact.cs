@@ -1,36 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Web;
 
 namespace Andy06.Models
 {
     public class Contact
     {
-        public string name { get; set; }
-        public string emailAddress { get; set; }
-        public string subject { get; set; }
-        public string message { get; set; }
+        public string Name { get; set; }
+        public string EmailAddress { get; set; }
+        public string Subject { get; set; }
+        public string GetMessage { get; set; }
 
 
         public void sendEmail()
         {
-            SmtpClient client = new SmtpClient();
-            client.Port = 587;
-            client.Host = "smtp.gmail.com";
-            client.EnableSsl = true;
-            client.Timeout = 10000;
-            client.DeliveryMethod = SmtpDeliveryMethod.Network;
-            client.UseDefaultCredentials = false;
-            client.Credentials = new System.Net.NetworkCredential("stewartclay166@gmail.com", "clayboydog");
+            MailMessage messages = new System.Net.Mail.MailMessage();
+            //from a fake email to send to you
+            string fromEmail = "WebsiteEmailSender123@gmail.com";
+            string password = "maximus11711A";
+            //change this email once complete to main 
+            string toEmail = "andyclay23@gmail.com";
+            messages.From = new MailAddress(fromEmail);
+            messages.To.Add(toEmail);
+            messages.Subject = Subject;
 
-            MailMessage mm = new MailMessage(emailAddress, "stewartclay166@gmail.com", subject, message);
-            mm.BodyEncoding = UTF8Encoding.UTF8;
-            mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+            messages.Body = GetMessage + " " + EmailAddress;
+            messages.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
 
-            client.Send(mm);
+            using (SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587))
+            {
+                smtpClient.EnableSsl = true;
+                smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = new NetworkCredential(fromEmail, password);
+
+                smtpClient.Send(messages.From.ToString(), messages.To.ToString(), messages.Subject, messages.Body);
+            }
         }
     }
 
