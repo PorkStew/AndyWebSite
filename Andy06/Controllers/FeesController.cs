@@ -9,7 +9,7 @@ namespace Andy06.Controllers
     public class FeesController : Controller
     {
         // GET: Fees
-       // [RequireHttps]
+       [RequireHttps]
         public ActionResult Index()
         {
             return View("FeesView");

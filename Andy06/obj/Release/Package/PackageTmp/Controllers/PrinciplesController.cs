@@ -9,7 +9,7 @@ namespace Andy06.Controllers
     public class PrinciplesController : Controller
     {
         // GET: Principles
-        [RequireHttps]
+       [RequireHttps]
         public ActionResult Index()
         {
             return View("PrinciplesView");

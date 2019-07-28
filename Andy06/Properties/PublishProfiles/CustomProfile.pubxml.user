@@ -14,16 +14,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/01/2019 11:04:33</publishTime>
     </File>
     <File Include="Andy06.csproj.user">
-      <publishTime>07/02/2019 09:43:59</publishTime>
+      <publishTime>07/17/2019 17:07:34</publishTime>
     </File>
     <File Include="App_Start/RouteConfig.cs">
       <publishTime>03/06/2019 23:04:45</publishTime>
     </File>
     <File Include="bin/Andy06.dll">
-      <publishTime>07/02/2019 09:43:59</publishTime>
+      <publishTime>07/17/2019 17:07:38</publishTime>
     </File>
     <File Include="bin/Andy06.pdb">
-      <publishTime>07/02/2019 09:43:59</publishTime>
+      <publishTime>07/17/2019 17:07:38</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>03/06/2019 23:04:46</publishTime>
@@ -188,25 +188,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/06/2019 23:04:46</publishTime>
     </File>
     <File Include="Controllers/ContactController.cs">
-      <publishTime>07/02/2019 09:33:17</publishTime>
+      <publishTime>07/17/2019 17:07:34</publishTime>
     </File>
     <File Include="Controllers/CVController.cs">
-      <publishTime>07/02/2019 09:33:17</publishTime>
+      <publishTime>07/17/2019 17:07:34</publishTime>
     </File>
     <File Include="Controllers/DownloadsController.cs">
-      <publishTime>07/02/2019 09:33:17</publishTime>
+      <publishTime>07/17/2019 17:07:34</publishTime>
     </File>
     <File Include="Controllers/ExpertWitnessTopicsController.cs">
-      <publishTime>07/02/2019 09:33:17</publishTime>
+      <publishTime>07/17/2019 17:07:34</publishTime>
     </File>
     <File Include="Controllers/FeesController.cs">
-      <publishTime>07/02/2019 09:33:17</publishTime>
+      <publishTime>07/17/2019 17:07:34</publishTime>
     </File>
     <File Include="Controllers/HomeController.cs">
-      <publishTime>07/02/2019 09:39:29</publishTime>
+      <publishTime>07/17/2019 17:07:34</publishTime>
     </File>
     <File Include="Controllers/PrinciplesController.cs">
-      <publishTime>07/02/2019 09:33:17</publishTime>
+      <publishTime>07/17/2019 17:07:34</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>03/06/2019 23:04:45</publishTime>
@@ -275,7 +275,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2019 15:38:33</publishTime>
     </File>
     <File Include="Style_Sheet/Home.css">
-      <publishTime>07/01/2019 11:42:12</publishTime>
+      <publishTime>07/17/2019 17:02:57</publishTime>
     </File>
     <File Include="Style_Sheet/MenuBar.js">
       <publishTime>07/02/2019 09:03:56</publishTime>
@@ -287,7 +287,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/16/2019 19:53:45</publishTime>
     </File>
     <File Include="Views/Contact/Contact.cshtml">
-      <publishTime>06/29/2019 15:20:23</publishTime>
+      <publishTime>07/08/2019 10:10:15</publishTime>
     </File>
     <File Include="Views/Contact/ContactView.cshtml">
       <publishTime>03/25/2019 22:50:53</publishTime>
@@ -302,25 +302,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/20/2019 09:49:01</publishTime>
     </File>
     <File Include="Views/ExpertWitnessTopics/ExpertWitnessTopics.cshtml">
-      <publishTime>06/06/2019 16:07:17</publishTime>
+      <publishTime>07/08/2019 10:10:15</publishTime>
     </File>
     <File Include="Views/ExpertWitnessTopics/ExpertWitnessTopicsView.cshtml">
       <publishTime>05/23/2019 16:08:25</publishTime>
     </File>
     <File Include="Views/Home/Home.cshtml">
-      <publishTime>07/02/2019 09:41:48</publishTime>
+      <publishTime>07/17/2019 17:07:34</publishTime>
     </File>
     <File Include="Views/Home/HomeView.cshtml">
       <publishTime>03/06/2019 23:04:45</publishTime>
     </File>
     <File Include="Views/Principles/Principles.cshtml">
-      <publishTime>06/06/2019 16:48:08</publishTime>
+      <publishTime>07/08/2019 10:10:15</publishTime>
     </File>
     <File Include="Views/Principles/PrinciplesView.cshtml">
       <publishTime>05/23/2019 16:08:25</publishTime>
     </File>
     <File Include="Views/TopicsAndPrinciples/TopicsAndPrinciples.cshtml">
-      <publishTime>04/16/2019 20:19:07</publishTime>
+      <publishTime>07/08/2019 10:10:15</publishTime>
     </File>
     <File Include="Views/TopicsAndPrinciples/TopicsAndPrinciplesView.cshtml">
       <publishTime>03/24/2019 08:45:48</publishTime>
@@ -329,7 +329,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/19/2019 09:55:23</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/13/2019 16:44:49</publishTime>
+      <publishTime>07/17/2019 17:07:39</publishTime>
     </File>
     <File Include="Web.Debug.config">
       <publishTime>03/06/2019 23:04:45</publishTime>

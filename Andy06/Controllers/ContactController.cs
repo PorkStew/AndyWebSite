@@ -11,7 +11,7 @@ namespace Andy06.Controllers
         // GET: Contact
 
         [HttpGet]
-       // [RequireHttps]
+      // [RequireHttps]
         public ActionResult Index()
         {
             
